@@ -6,7 +6,9 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6YWB4ECCWW"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  
   <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
@@ -32,8 +34,7 @@
 
 <body>
 
-
-  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-dark">
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-sticky navbar-light">
     <div class="container">
       <a href="./index.html" class="navbar-brand">
         <!-- <img src="assets/images/logo/logo-light.svg" alt="Logo"> --> 
@@ -49,7 +50,7 @@ Retrofit Engineering
         </li>
         <li class="nav-item d-none d-lg-block">
           <a href="./sign-in.html"
-            class="btn btn-outline-white rounded-pill ms-2">
+            class="btn btn-outline-light  rounded-pill ms-2">
             Login
           </a>
         </li>
@@ -93,43 +94,32 @@ Retrofit Engineering
     </div>
   </nav>
   
+
+  
   
 
 
   <section class="py-15 background-dimm  py-xl-20">
     <div class="container mt-5 mt-lg-10">
       <div class="row align-items-center justify-content-between">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <h1>Interested in working together? Contact!</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odio ipsa provident ducimus tenetur quos
+        <div class="mb-4 mb-lg-0">
+          <h1> Contact Us</h1>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate odio ipsa provident ducimus tenetur quos
             architecto voluptatibus inventore similique, hic sunt nisi officia eaque alias magni minima recusandae nobis
-            quia.</p>
+            quia.</p> -->
           <hr class="my-4 fw-25 ml-0">
           <ul class="list-group list-group-minimal">
             <li class="list-group-item d-flex align-items-center">
               <span class="w-25 text-muted">Email</span>
-              contact@webuildthemes.com
+              <a class="nav-link nav-item  text-center nav-icon" href="tel:+1-6825584748">+1-6825584748</a>
             </li>
             <li class="list-group-item d-flex align-items-center">
               <span class="w-25 text-muted">Phone</span>
-              +1 234 56 78 90
-            </li>
-            <li class="list-group-item d-flex align-items-center">
-              <span class="w-25 text-muted">Instagram</span>
-              @webuildthemes
+              <a class="nav-link text-center nav-icon" href="mailto:info@retrofitengineering.com">info@retrofitengineering.com</a>
             </li>
           </ul>
         </div>
-        <div class="col-lg-5">
-          <div class="media equal-1-1">
-            <div id="map1" class="map"></div>
-          </div>
-          <div class="card bg-black text-white">
-            <div class="card-body">
-              <h5>5th Avenue, New York <span class="font-weight-bold d-block">USA 10255</span></h5>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -139,17 +129,21 @@ Retrofit Engineering
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 mb-5">
-          <h2>Let's make something big. <span class="d-block">Together.</span></h2>
+          <h2>Write Us <span class="d-block">Here</span></h2>
         </div>
         <div class="col-lg-8">
           <form action="#" class="row g-3">
             <div class="col-md-6">
-              <label for="yourName" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="yourName" placeholder="Your Name">
+              <label for="yourfName" class="form-label">Your First Name</label>
+              <input type="text" class="form-control" id="yourfName" placeholder="Your First Name">
             </div>
             <div class="col-md-6">
-              <label for="yourCompany" class="form-label">Your Company</label>
-              <input type="text" class="form-control" id="yourCompany" placeholder="Your Company">
+              <label for="yourLName" class="form-label">Your Last Name</label>
+              <input type="text" class="form-control" id="yourLName" placeholder="Your Last Name">
+            </div>
+            <div class="col-md-12">
+              <label for="yourEmail" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="yourEmail" placeholder="Your Email">
             </div>
             <div class="col-md-12">
               <label for="yourMessage" class="form-label">Message</label>
@@ -179,7 +173,7 @@ Retrofit Engineering
   <footer id="footer" class="py-10 py-xl-15 bg-black inverted border-top">
     <div class="container">
         <div class="text-center order-lg-1"><a href="index-2.html" class=""><img
-              src="assets/images/logo/logo-light.svg" alt="Logo"></a></div>
+              src="assets/images/logo/logo-white.png" alt="Logo"></a></div>
 
             <div  class="text-center d-flex my-3 justify-content-center order-lg-1">
               <ul style="padding-left: 0px !important;" class="d-flex justify-content-center">
@@ -200,188 +194,7 @@ Retrofit Engineering
     </div>
   </footer>
 
-  <script>
-    function initMap() {
-      var latlng = new google.maps.LatLng(40.702888, -74.012420);
 
-      var myOptions = {
-        zoom: 18,
-        center: latlng,
-        disableDefaultUI: true,
-        styles: [
-          {
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "color": "#f5f5f5"
-              }
-            ]
-          },
-          {
-            "elementType": "labels.icon",
-            "stylers": [
-              {
-                "visibility": "off"
-              }
-            ]
-          },
-          {
-            "elementType": "labels.text.fill",
-            "stylers": [
-              {
-                "color": "#616161"
-              }
-            ]
-          },
-          {
-            "elementType": "labels.text.stroke",
-            "stylers": [
-              {
-                "color": "#f5f5f5"
-              }
-            ]
-          },
-          {
-            "featureType": "administrative.land_parcel",
-            "elementType": "labels.text.fill",
-            "stylers": [
-              {
-                "color": "#bdbdbd"
-              }
-            ]
-          },
-          {
-            "featureType": "poi",
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "color": "#eeeeee"
-              }
-            ]
-          },
-          {
-            "featureType": "poi",
-            "elementType": "labels.text.fill",
-            "stylers": [
-              {
-                "color": "#757575"
-              }
-            ]
-          },
-          {
-            "featureType": "poi.park",
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "color": "#e5e5e5"
-              }
-            ]
-          },
-          {
-            "featureType": "poi.park",
-            "elementType": "labels.text.fill",
-            "stylers": [
-              {
-                "color": "#9e9e9e"
-              }
-            ]
-          },
-          {
-            "featureType": "road",
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "color": "#ffffff"
-              }
-            ]
-          },
-          {
-            "featureType": "road.arterial",
-            "elementType": "labels.text.fill",
-            "stylers": [
-              {
-                "color": "#757575"
-              }
-            ]
-          },
-          {
-            "featureType": "road.highway",
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "color": "#dadada"
-              }
-            ]
-          },
-          {
-            "featureType": "road.highway",
-            "elementType": "labels.text.fill",
-            "stylers": [
-              {
-                "color": "#616161"
-              }
-            ]
-          },
-          {
-            "featureType": "road.local",
-            "elementType": "labels.text.fill",
-            "stylers": [
-              {
-                "color": "#9e9e9e"
-              }
-            ]
-          },
-          {
-            "featureType": "transit.line",
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "color": "#e5e5e5"
-              }
-            ]
-          },
-          {
-            "featureType": "transit.station",
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "color": "#eeeeee"
-              }
-            ]
-          },
-          {
-            "featureType": "water",
-            "elementType": "geometry",
-            "stylers": [
-              {
-                "color": "#c9c9c9"
-              }
-            ]
-          },
-          {
-            "featureType": "water",
-            "elementType": "labels.text.fill",
-            "stylers": [
-              {
-                "color": "#9e9e9e"
-              }
-            ]
-          }
-        ]
-      };
-
-      var map = new google.maps.Map(document.getElementById("map1"), myOptions);
-
-      map.panBy(-100, -40);
-
-      var myMarker = new google.maps.Marker(
-        {
-          position: latlng,
-          map: map,
-          icon: 'assets/images/svg/pin.svg'
-        });
-    }
-  </script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAME5wJgLdn1aQSxC7-iWxJ3isuveK9Rv4&amp;callback=initMap"
     async defer></script>
 
